@@ -1,0 +1,27 @@
+
+CommandSet
+
+    CommandName: 
+    Actions
+        Open a new file
+        Write current date-time
+        
+    2 - Actions
+        Save a file
+        Save as pdf
+        Save as HTML
+        close current file
+        
+        
+Command Interface (Key, Name, Execute)
+Action (Name, Execute)
+
+
+public interface Command {
+    void execute();
+    void addAction();
+}
+
+public interface Action {
+    void execute();
+}
